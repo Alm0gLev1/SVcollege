@@ -18,7 +18,6 @@ def choose_interface():
 
 
 if __name__ == "__main__":
-    conf.checkIPaddr = False
     dhcp_discover = Ether(dst='ff:ff:ff:ff:ff:ff', src=RandMAC()) \
                     / IP(src='0.0.0.0', dst='255.255.255.255') \
                     / UDP(sport=68, dport=67) \
