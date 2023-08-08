@@ -10,8 +10,6 @@ def choose_interface():
         try:
             user_choice = int(input('Choose the interface number from the list above: '))
             if 0 <= user_choice < len(interfaces):
-                print(interfaces[user_choice])
-                print(type(interfaces[user_choice]))
                 return interfaces[user_choice]
             else:
                 print('Invalid choice. Try again.')
